@@ -1,0 +1,19 @@
+baseURL = "https://blog.frieserlabs.dev/"
+languageCode = "en-us"
+title = "Frieserlabs blog"
+theme = "github.com/frieserlabs/hugo-theme-novela"
+publishDir = "docs"
+
+disqusShortname = "blog-frieserlabs-dev"
+googleAnalytics = "UA-175585349-1"
+
+[params]
+description = "Blog for notes and ideas about software development and devops"
+
+[module]
+[[module.imports]]
+path = "github.com/frieserlabs/hugo-theme-novela"
+
+[social]
+github = "https://github.com/frieser"
+linkedin = "https://www.linkedin.com/in/hectormolano/"

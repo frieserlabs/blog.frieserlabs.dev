@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Best practices on Frieserlabs blog</title>
+    <link>https://blog.frieserlabs.dev/tags/best-practices/</link>
+    <description>Recent content in Best practices on Frieserlabs blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 29 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.frieserlabs.dev/tags/best-practices/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Functional Options for your API in Go</title>
+      <link>https://blog.frieserlabs.dev/post/functional-option-in-go/</link>
+      <pubDate>Sat, 29 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.frieserlabs.dev/post/functional-option-in-go/</guid>
+      <description>Design patterns constantly help us when designing our software architecture, and allow programmers to speak in a common language that make easier the transmission of concepts regardless of the programming language used.
+The most used are those that help us to initialize type values: Creational Patterns. Among them is the Builder pattern that we all know, but recently I discovered a functional pattern that in my case fits most of the time: &amp;ldquo;Functional Options&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Functional Options Use Case I: HTTP Service Wrapper</title>
+      <link>https://blog.frieserlabs.dev/post/http-service-functional-options/</link>
+      <pubDate>Sat, 29 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.frieserlabs.dev/post/http-service-functional-options/</guid>
+      <description>In previous posts, we discussed in depth the functional options pattern and listed the benefits of using this pattern over others such as the builder pattern when designing our APIs:
+ Functional Options for your API in Go  Make your packages API more friendly in Go. August 29, 2020      In this post, we are going to see a common use case where we can apply this pattern.</description>
+    </item>
+    
+    <item>
+      <title>Functional Options Use Case II: Simple ORM</title>
+      <link>https://blog.frieserlabs.dev/post/simple-orm-functional-options/</link>
+      <pubDate>Sat, 29 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.frieserlabs.dev/post/simple-orm-functional-options/</guid>
+      <description>In previous posts, we discussed in depth the functional options pattern and listed the benefits of using this pattern over others such as the builder pattern when designing our APIs:
+ Functional Options for your API in Go  Make your packages API more friendly in Go. August 29, 2020      In this one, we are going to apply this pattern to another common use case in our projects, accessing a database.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HTTP on Frieserlabs blog</title>
+    <link>https://blog.frieserlabs.dev/tags/http/</link>
+    <description>Recent content in HTTP on Frieserlabs blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 29 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.frieserlabs.dev/tags/http/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Functional Options Use Case I: HTTP Service Wrapper</title>
+      <link>https://blog.frieserlabs.dev/post/http-service-functional-options/</link>
+      <pubDate>Sat, 29 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.frieserlabs.dev/post/http-service-functional-options/</guid>
+      <description>In previous posts, we discussed in depth the functional options pattern and listed the benefits of using this pattern over others such as the builder pattern when designing our APIs:
+ Functional Options for your API in Go  Make your packages API more friendly in Go. August 29, 2020      In this post, we are going to see a common use case where we can apply this pattern.</description>
+    </item>
+    
+  </channel>
+</rss>
