@@ -4,7 +4,57 @@
   
   <url>
     <loc>https://blog.frieserlabs.dev/</loc>
-    <lastmod>2020-08-29T00:00:00+00:00</lastmod>
+    <lastmod>2020-12-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.frieserlabs.dev/tags/bazel/</loc>
+    <lastmod>2020-12-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.frieserlabs.dev/tags/development/</loc>
+    <lastmod>2020-12-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.frieserlabs.dev/tags/gazelle/</loc>
+    <lastmod>2020-12-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.frieserlabs.dev/tags/git/</loc>
+    <lastmod>2020-12-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.frieserlabs.dev/post/bazel-git-hooks/</loc>
+    <lastmod>2020-12-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.frieserlabs.dev/tags/go/</loc>
+    <lastmod>2020-12-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.frieserlabs.dev/post/ignore-folder-gazelle/</loc>
+    <lastmod>2020-12-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.frieserlabs.dev/tags/monorepo/</loc>
+    <lastmod>2020-12-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.frieserlabs.dev/post/</loc>
+    <lastmod>2020-12-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.frieserlabs.dev/tags/</loc>
+    <lastmod>2020-12-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -14,11 +64,6 @@
   
   <url>
     <loc>https://blog.frieserlabs.dev/tags/database/</loc>
-    <lastmod>2020-08-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.frieserlabs.dev/tags/development/</loc>
     <lastmod>2020-08-29T00:00:00+00:00</lastmod>
   </url>
   
@@ -38,11 +83,6 @@
   </url>
   
   <url>
-    <loc>https://blog.frieserlabs.dev/tags/go/</loc>
-    <lastmod>2020-08-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://blog.frieserlabs.dev/tags/http/</loc>
     <lastmod>2020-08-29T00:00:00+00:00</lastmod>
   </url>
@@ -58,17 +98,7 @@
   </url>
   
   <url>
-    <loc>https://blog.frieserlabs.dev/post/</loc>
-    <lastmod>2020-08-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://blog.frieserlabs.dev/tags/sql/</loc>
-    <lastmod>2020-08-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.frieserlabs.dev/tags/</loc>
     <lastmod>2020-08-29T00:00:00+00:00</lastmod>
   </url>
   

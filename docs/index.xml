@@ -6,10 +6,27 @@
     <description>Recent content on Frieserlabs blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 29 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 05 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.frieserlabs.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git Hooks in Bazel</title>
+      <link>https://blog.frieserlabs.dev/post/bazel-git-hooks/</link>
+      <pubDate>Sat, 05 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.frieserlabs.dev/post/bazel-git-hooks/</guid>
+      <description>Recently, we have adopted the monorepo philosophy for our projects at my work team. We started to use it in a project that has multiple services.
+The first concern that came to our mind, is that a single change in one of our services or common libraries, could break other services. When someone makes a change to any library to correct a bug or introduce a new feature for a particular service, it could break compatibility with other services or affect the behavior of another service without anyone noticing.</description>
+    </item>
     
-	<atom:link href="https://blog.frieserlabs.dev/index.xml" rel="self" type="application/rss+xml" />
-    
+    <item>
+      <title>Ignore a folder with Gazelle</title>
+      <link>https://blog.frieserlabs.dev/post/ignore-folder-gazelle/</link>
+      <pubDate>Sat, 05 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.frieserlabs.dev/post/ignore-folder-gazelle/</guid>
+      <description>Gazelle is a Bazel build file generator for Bazel projects. Sometimes, we need to ignore some folder where Gazelle look into to generate build files.
+Add this to your root BUILD.bazel file:
+# BUILD.bazel # gazelle:exclude folder_path </description>
+    </item>
     
     <item>
       <title>Functional Options for your API in Go</title>
@@ -17,8 +34,8 @@
       <pubDate>Sat, 29 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>https://blog.frieserlabs.dev/post/functional-option-in-go/</guid>
-      <description>Design patterns constantly help us when designing our software architecture, and allow programmers to speak in a common language that make easier the transmission of concepts regardless of the programming language used.
-The most used are those that help us to initialize type values: Creational Patterns. Among them is the Builder pattern that we all know, but recently I discovered a functional pattern that in my case fits most of the time: &amp;ldquo;Functional Options&amp;rdquo;.</description>
+      <description>Design patterns constantly help us to design our software architecture, and allow programmers to speak in a common language that make easier the transmission of concepts regardless of the programming language used.
+The most used are those that help us to initialize type values: Creational Patterns. Recently I found a functional pattern that in my case fits most of the time: Functional Options. Before define and look at examples of how to use this pattern, I want to dive in how we normally initialize objects in Go.</description>
     </item>
     
     <item>

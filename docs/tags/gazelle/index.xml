@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gazelle on Frieserlabs blog</title>
+    <link>https://blog.frieserlabs.dev/tags/gazelle/</link>
+    <description>Recent content in Gazelle on Frieserlabs blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 05 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.frieserlabs.dev/tags/gazelle/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ignore a folder with Gazelle</title>
+      <link>https://blog.frieserlabs.dev/post/ignore-folder-gazelle/</link>
+      <pubDate>Sat, 05 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.frieserlabs.dev/post/ignore-folder-gazelle/</guid>
+      <description>Gazelle is a Bazel build file generator for Bazel projects. Sometimes, we need to ignore some folder where Gazelle look into to generate build files.
+Add this to your root BUILD.bazel file:
+# BUILD.bazel # gazelle:exclude folder_path </description>
+    </item>
+    
+  </channel>
+</rss>

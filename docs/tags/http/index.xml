@@ -6,11 +6,7 @@
     <description>Recent content in HTTP on Frieserlabs blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 29 Aug 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://blog.frieserlabs.dev/tags/http/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 29 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.frieserlabs.dev/tags/http/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Functional Options Use Case I: HTTP Service Wrapper</title>
       <link>https://blog.frieserlabs.dev/post/http-service-functional-options/</link>

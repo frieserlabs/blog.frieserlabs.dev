@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bazel on Frieserlabs blog</title>
+    <link>https://blog.frieserlabs.dev/tags/bazel/</link>
+    <description>Recent content in Bazel on Frieserlabs blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 05 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.frieserlabs.dev/tags/bazel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git Hooks in Bazel</title>
+      <link>https://blog.frieserlabs.dev/post/bazel-git-hooks/</link>
+      <pubDate>Sat, 05 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.frieserlabs.dev/post/bazel-git-hooks/</guid>
+      <description>Recently, we have adopted the monorepo philosophy for our projects at my work team. We started to use it in a project that has multiple services.
+The first concern that came to our mind, is that a single change in one of our services or common libraries, could break other services. When someone makes a change to any library to correct a bug or introduce a new feature for a particular service, it could break compatibility with other services or affect the behavior of another service without anyone noticing.</description>
+    </item>
+    
+    <item>
+      <title>Ignore a folder with Gazelle</title>
+      <link>https://blog.frieserlabs.dev/post/ignore-folder-gazelle/</link>
+      <pubDate>Sat, 05 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.frieserlabs.dev/post/ignore-folder-gazelle/</guid>
+      <description>Gazelle is a Bazel build file generator for Bazel projects. Sometimes, we need to ignore some folder where Gazelle look into to generate build files.
+Add this to your root BUILD.bazel file:
+# BUILD.bazel # gazelle:exclude folder_path </description>
+    </item>
+    
+  </channel>
+</rss>

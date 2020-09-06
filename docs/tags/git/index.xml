@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on Frieserlabs blog</title>
+    <link>https://blog.frieserlabs.dev/tags/git/</link>
+    <description>Recent content in Git on Frieserlabs blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 05 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.frieserlabs.dev/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git Hooks in Bazel</title>
+      <link>https://blog.frieserlabs.dev/post/bazel-git-hooks/</link>
+      <pubDate>Sat, 05 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.frieserlabs.dev/post/bazel-git-hooks/</guid>
+      <description>Recently, we have adopted the monorepo philosophy for our projects at my work team. We started to use it in a project that has multiple services.
+The first concern that came to our mind, is that a single change in one of our services or common libraries, could break other services. When someone makes a change to any library to correct a bug or introduce a new feature for a particular service, it could break compatibility with other services or affect the behavior of another service without anyone noticing.</description>
+    </item>
+    
+  </channel>
+</rss>

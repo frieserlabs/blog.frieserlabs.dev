@@ -6,19 +6,15 @@
     <description>Recent content in Patterns on Frieserlabs blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 29 Aug 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://blog.frieserlabs.dev/tags/patterns/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 29 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.frieserlabs.dev/tags/patterns/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Functional Options for your API in Go</title>
       <link>https://blog.frieserlabs.dev/post/functional-option-in-go/</link>
       <pubDate>Sat, 29 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>https://blog.frieserlabs.dev/post/functional-option-in-go/</guid>
-      <description>Design patterns constantly help us when designing our software architecture, and allow programmers to speak in a common language that make easier the transmission of concepts regardless of the programming language used.
-The most used are those that help us to initialize type values: Creational Patterns. Among them is the Builder pattern that we all know, but recently I discovered a functional pattern that in my case fits most of the time: &amp;ldquo;Functional Options&amp;rdquo;.</description>
+      <description>Design patterns constantly help us to design our software architecture, and allow programmers to speak in a common language that make easier the transmission of concepts regardless of the programming language used.
+The most used are those that help us to initialize type values: Creational Patterns. Recently I found a functional pattern that in my case fits most of the time: Functional Options. Before define and look at examples of how to use this pattern, I want to dive in how we normally initialize objects in Go.</description>
     </item>
     
     <item>

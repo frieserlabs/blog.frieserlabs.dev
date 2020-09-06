@@ -3,6 +3,8 @@ title: Functional Options for your API in Go
 date: 2020-08-29
 hero: "/post/functional-option-in-go/images/startup.jpg"
 excerpt: Make your packages API more friendly in Go.
+authors:
+  - frieser
 tags:
 - Development
 - Go
@@ -10,14 +12,14 @@ tags:
 - Best practices
 ---
 
-**Design patterns** constantly help us when designing our software architecture,
+**Design patterns** constantly help us to design our software architecture,
 and allow programmers to speak in a **common language** that make easier the 
 transmission of concepts regardless of the programming language used.
 
 The most used are those that help us to initialize type values: Creational Patterns.
-Among them is the Builder pattern that we all know, but recently I discovered
-a functional pattern that in my case fits most of the time: **"Functional Options"**.
-Before defining and seeing examples of how to use this pattern, I wanted to 
+Recently I found a functional pattern that in my case fits most of the time:
+ **`Functional Options`**.
+Before define and look at examples of how to use this pattern, I want to 
 dive in **how we normally initialize objects in Go**.
 
 ## Building objects: Passing arguments
@@ -70,7 +72,7 @@ func main() {
 ```
 
 Ok, simple, effective... but What happens if we need to add more
-properties to our object?
+properties to our type?
 
 ```go
 package table
@@ -180,13 +182,13 @@ func main() {
 ```
 
 With the builder pattern we get rid of the parameters order problem, the default
-values problem(Notice that int Legs() method invocation we accept the 3 legs default value)
+values problem(notice that `int Legs()` method invocation we accept the 3 legs default value)
 and makes the code easier to read and test.
 
-In the other hand, we have to create a builder for every concrete type, and we still
-have to pass in some builder methods a parameter value.
+In the other hand, we have to create a builder for every concrete type, and we don't have
+the opportunity as a consumer to extend the behaviour of the constructor.
 
-Maybe we can improve this design with Functional Options.
+We can improve this design with Functional Options.
 
 ## Building objects: Functional options pattern
 
