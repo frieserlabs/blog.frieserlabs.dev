@@ -23,54 +23,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd6905ba-fdaa-4971-9c91-313ef7eff23f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/content/post/distribute-githooks-template-bazel/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/post/ignore-folder-gazelle/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/blog.frieserlabs.dev.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blog.frieserlabs.dev.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/post/functional-option-in-go/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/post/functional-option-in-go/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/post/http-service-functional-options/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/post/http-service-functional-options/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/post/simple-orm-functional-options/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/post/simple-orm-functional-options/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/about/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/authors/frieser/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/authors/frieser/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/authors/frieser/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/authors/frieser/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/authors/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/authors/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/authors/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/authors/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/categories/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/categories/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/categories/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/categories/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/images/favicon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/docs/images/favicon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/js/progressBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/js/progressBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/post/functional-option-in-go/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/post/functional-option-in-go/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/post/http-service-functional-options/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/post/http-service-functional-options/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/post/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/post/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/post/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/post/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/post/simple-orm-functional-options/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/post/simple-orm-functional-options/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/sitemap.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tags/best-practices/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tags/best-practices/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tags/best-practices/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tags/best-practices/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tags/database/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tags/database/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tags/database/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tags/database/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tags/development/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tags/development/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tags/development/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tags/development/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tags/go/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tags/go/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tags/go/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tags/go/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tags/http/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tags/http/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tags/http/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tags/http/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tags/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tags/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tags/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tags/orm/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tags/orm/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tags/orm/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tags/orm/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tags/patterns/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tags/patterns/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tags/patterns/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tags/patterns/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tags/sql/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tags/sql/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tags/sql/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tags/sql/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tags/use-case/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tags/use-case/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tags/use-case/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tags/use-case/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/_gen/assets/scss/scss/global.scss_48b060fe05b0a273d182ef83c0605941.content" beforeDir="false" afterPath="$PROJECT_DIR$/resources/_gen/assets/scss/scss/global.scss_48b060fe05b0a273d182ef83c0605941.content" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/_gen/assets/scss/scss/global.scss_48b060fe05b0a273d182ef83c0605941.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/_gen/assets/scss/scss/global.scss_48b060fe05b0a273d182ef83c0605941.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/post/bazel-git-hooks/images/hook.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/content/post/bazel-git-hooks/images/hero.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/post/dotfiles/images/monitors.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/content/post/dotfiles/images/hero.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/post/functional-option-in-go/images/board.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/post/functional-option-in-go/images/cartel.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/post/functional-option-in-go/images/doors.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/post/functional-option-in-go/images/notebook.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/post/functional-option-in-go/images/notebook2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/post/functional-option-in-go/images/startup.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/content/post/functional-option-in-go/images/hero.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/post/http-service-functional-options/images/network.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/content/post/http-service-functional-options/images/hero.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/post/ignore-folder-gazelle/images/generator.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/content/post/ignore-folder-gazelle/images/hero.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/post/simple-orm-functional-options/images/datacenter.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/content/post/simple-orm-functional-options/images/hero.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/post/simple-orm-functional-options/images/hard.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/post/simple-orm-functional-options/images/storage.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,8 +58,13 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hugo-theme-novela" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/docs" />
     <property name="settings.editor.selected.configurable" value="goland.project.structure" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,15 +96,15 @@
       <screen x="0" y="370" width="3440" height="1440" />
     </state>
     <state x="1271" y="494" width="1522" height="1117" key="SettingsEditor/0.370.3440.1440/3440.0.2160.3840@0.370.3440.1440" timestamp="1607166581134" />
-    <state x="3542" y="518" width="2058" height="2123" key="find.popup" timestamp="1607202643102">
-      <screen x="0" y="0" width="5600" height="3840" />
+    <state x="1212" y="1014" width="1264" height="796" key="find.popup" timestamp="1607291503310">
+      <screen x="0" y="370" width="3440" height="1440" />
     </state>
     <state x="3542" y="518" width="2058" height="2123" key="find.popup/0.0.5600.3840@0.0.5600.3840" timestamp="1607202643102" />
-    <state x="1212" y="1014" width="1264" height="796" key="find.popup/0.370.3440.1440/3440.0.2160.3840@0.370.3440.1440" timestamp="1607175214011" />
-    <state x="1525" y="368" width="1009" height="1470" key="search.everywhere.popup" timestamp="1607207367702">
+    <state x="1212" y="1014" width="1264" height="796" key="find.popup/0.370.3440.1440/3440.0.2160.3840@0.370.3440.1440" timestamp="1607291503310" />
+    <state x="1525" y="368" width="1009" height="1470" key="search.everywhere.popup" timestamp="1607286236201">
       <screen x="0" y="370" width="3440" height="1440" />
     </state>
     <state x="2483" y="-5" width="1643" height="3920" key="search.everywhere.popup/0.0.5600.3840@0.0.5600.3840" timestamp="1607202636198" />
-    <state x="1525" y="368" width="1009" height="1470" key="search.everywhere.popup/0.370.3440.1440/3440.0.2160.3840@0.370.3440.1440" timestamp="1607207367702" />
+    <state x="1525" y="368" width="1009" height="1470" key="search.everywhere.popup/0.370.3440.1440/3440.0.2160.3840@0.370.3440.1440" timestamp="1607286236201" />
   </component>
 </project>
