@@ -17,3 +17,20 @@ path = "github.com/frieserlabs/hugo-theme-novela"
 [social]
 github = "https://github.com/frieser"
 linkedin = "https://www.linkedin.com/in/hectormolano/"
+
+[caches]
+[caches.assets]
+dir = ":resourceDir/_gen"
+maxAge = "24h"
+[caches.getcsv]
+dir = ":cacheDir/:project"
+maxAge = "24h"
+[caches.getjson]
+dir = ":cacheDir/:project"
+maxAge = "24h"
+[caches.images]
+dir = ":resourceDir/_gen"
+maxAge = "24h"
+[caches.modules]
+dir = ":cacheDir/modules"
+maxAge = "24h"
