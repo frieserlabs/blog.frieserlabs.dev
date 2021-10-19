@@ -1,126 +1,76 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://blog.frieserlabs.dev/</loc>
     <lastmod>2020-12-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://blog.frieserlabs.dev/tags/bazel/</loc>
     <lastmod>2020-12-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://blog.frieserlabs.dev/tags/development/</loc>
     <lastmod>2020-12-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://blog.frieserlabs.dev/tags/gazelle/</loc>
     <lastmod>2020-12-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://blog.frieserlabs.dev/tags/git/</loc>
     <lastmod>2020-12-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://blog.frieserlabs.dev/post/bazel-git-hooks/</loc>
     <lastmod>2020-12-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://blog.frieserlabs.dev/tags/go/</loc>
     <lastmod>2020-12-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://blog.frieserlabs.dev/post/ignore-folder-gazelle/</loc>
     <lastmod>2020-12-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://blog.frieserlabs.dev/tags/monorepo/</loc>
     <lastmod>2020-12-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://blog.frieserlabs.dev/post/</loc>
     <lastmod>2020-12-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://blog.frieserlabs.dev/tags/</loc>
     <lastmod>2020-12-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://blog.frieserlabs.dev/tags/best-practices/</loc>
     <lastmod>2020-08-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://blog.frieserlabs.dev/tags/database/</loc>
     <lastmod>2020-08-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://blog.frieserlabs.dev/post/functional-option-in-go/</loc>
     <lastmod>2020-08-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://blog.frieserlabs.dev/post/http-service-functional-options/</loc>
     <lastmod>2020-08-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://blog.frieserlabs.dev/post/simple-orm-functional-options/</loc>
     <lastmod>2020-08-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://blog.frieserlabs.dev/tags/http/</loc>
     <lastmod>2020-08-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://blog.frieserlabs.dev/tags/orm/</loc>
     <lastmod>2020-08-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://blog.frieserlabs.dev/tags/patterns/</loc>
     <lastmod>2020-08-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://blog.frieserlabs.dev/tags/sql/</loc>
     <lastmod>2020-08-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://blog.frieserlabs.dev/tags/use-case/</loc>
     <lastmod>2020-08-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://blog.frieserlabs.dev/about/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://blog.frieserlabs.dev/authors/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://blog.frieserlabs.dev/categories/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://blog.frieserlabs.dev/authors/frieser/</loc>
   </url>
-  
 </urlset>

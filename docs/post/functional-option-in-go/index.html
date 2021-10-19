@@ -5,15 +5,12 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="/images/favicon.svg">
-    <link rel="preload" href="https://use.typekit.net/huf6cwu.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://use.typekit.net/huf6cwu.css"></noscript>
+    <link rel="stylesheet" href="https://use.typekit.net/huf6cwu.css">
     
-    <link onload="if(media!='all')media='all'"  media="none" rel="stylesheet" href="/scss/global.min.35ddc9d933dec22c7207306289a5fa2b21ac872e5e15b21880f6fa835fec411c.css">
+    <link rel="stylesheet" href="/scss/global.min.8f7c87358af0ef7023ced522c62d9ddca25140d4c5011aa7636cbb16feb0fdc4.css">
     
-    <link rel="preload" href="/css/prism.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="/css/prism.css"></noscript>
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather&display=swap"></noscript>
+    <link rel="stylesheet" href="/css/prism.css" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
     
 
  
@@ -52,7 +49,19 @@ The most used are those that help us to initialize type values: Creational Patte
 
 
 
-    </head>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-175585349-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
 
 
 <body class="line-numbers">
@@ -79,9 +88,8 @@ The most used are those that help us to initialize type values: Creational Patte
             id="svg8"
             version="1.1"
             viewBox="0 0 93.845541 13.146094"
-            h
-            eight="18.899mm"
-            width="134.914mm">
+            height="16.481mm"
+            width="117.649mm">
         <defs
                 id="defs2">
             <rect
@@ -457,12 +465,12 @@ dive in <strong>how we normally initialize objects in Go</strong>.</p>
 <h2 id="building-objects-passing-arguments">Building objects: Passing arguments</h2>
 <p>Let&rsquo;s imagine that we want to create a package called table that let the consumers
 build tables. The simplest way would be using the struct literal itself:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">table</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">table</span>
 
 <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Table</span> <span style="color:#66d9ef">struct</span> {
 	<span style="color:#a6e22e">legs</span> <span style="color:#66d9ef">int</span>
 }
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
 
 <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
 	<span style="color:#75715e">// use the struct literal
@@ -471,7 +479,7 @@ build tables. The simplest way would be using the struct literal itself:</p>
 </code></pre></div><p>In most cases, we need to add some logic or property validations to build the
 object. For example, we can figure that the minimum legs of a table should be 3 to
 be stable. In these cases we need to use a constructor for the table:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">New</span>(<span style="color:#a6e22e">legs</span> <span style="color:#66d9ef">int</span>) <span style="color:#f92672">*</span><span style="color:#a6e22e">Table</span> {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">New</span>(<span style="color:#a6e22e">legs</span> <span style="color:#66d9ef">int</span>) <span style="color:#f92672">*</span><span style="color:#a6e22e">Table</span> {
     <span style="color:#75715e">// 3 is the minimum legs to be stable 
 </span><span style="color:#75715e"></span>	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">legs</span> &lt; <span style="color:#ae81ff">3</span> {
 		<span style="color:#a6e22e">legs</span> = <span style="color:#ae81ff">3</span>
@@ -481,7 +489,7 @@ be stable. In these cases we need to use a constructor for the table:</p>
 		<span style="color:#a6e22e">legs</span>: <span style="color:#a6e22e">legs</span>,
 	}
 }
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
 
 <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
 	<span style="color:#75715e">// use the constructor
@@ -489,7 +497,7 @@ be stable. In these cases we need to use a constructor for the table:</p>
 }
 </code></pre></div><p>Ok, simple, effective&hellip; but What happens if we need to add more
 properties to our type?</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">table</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">table</span>
 
 <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Table</span> <span style="color:#66d9ef">struct</span> {
 	<span style="color:#a6e22e">legs</span>     <span style="color:#66d9ef">int</span>
@@ -510,7 +518,7 @@ properties to our type?</p>
 		<span style="color:#a6e22e">shape</span>:    <span style="color:#a6e22e">shape</span>,
 	}
 }
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
 
 <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
 	<span style="color:#75715e">// use the constructor
@@ -523,7 +531,7 @@ It also forces the consumer of the package to
 and their default values.</p>
 <p>A logical evolution of this design would be passing a <strong>configuration struct</strong> instead
 a list of arguments:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">table</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">table</span>
 
 <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Config</span> <span style="color:#66d9ef">struct</span> {
 	<span style="color:#a6e22e">Legs</span>     <span style="color:#66d9ef">int</span>
@@ -545,7 +553,7 @@ a list of arguments:</p>
 	}
 }
 
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
 
 <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
 	<span style="color:#75715e">// use a config struct
@@ -563,7 +571,7 @@ are optional or mandatory, and which are their default values.</p>
 You can look for a full implementation
 <a href="https://github.com/tmrts/go-patterns/blob/master/creational/builder.md">here</a>.</p>
 <p>This is how our API would look:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
 
 <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
 	<span style="color:#75715e">// use a builder
@@ -591,7 +599,7 @@ we want to create with a series of options.</p>
 <p>An option is not more than a function that returns another function: a <strong>closure</strong>.
 This closure will be executed inside the constructor and set the state of the type value.</p>
 <h4 id="formal-definition">Formal definition</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">somepackage</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">somepackage</span>
 
 <span style="color:#75715e">// our type
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">T</span> <span style="color:#66d9ef">struct</span> {
@@ -621,7 +629,7 @@ This closure will be executed inside the constructor and set the state of the ty
 
 	<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">value</span>
 }
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
 
 <span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;somepackage&#34;</span>
 
@@ -635,7 +643,7 @@ This closure will be executed inside the constructor and set the state of the ty
 }
 </code></pre></div><p>Now, let&rsquo;s look to our previous table example using Functional Options.</p>
 <h4 id="table-example">Table example</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">table</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">table</span>
 
 <span style="color:#66d9ef">const</span> (
 	<span style="color:#a6e22e">Black</span> <span style="color:#a6e22e">Color</span> = <span style="color:#e6db74">&#34;black&#34;</span>
@@ -727,7 +735,7 @@ This closure will be executed inside the constructor and set the state of the ty
 </span><span style="color:#75715e"></span>	<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">t</span>
 }
 
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
 
 <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
     <span style="color:#75715e">// note that we can read this and figure how our table
@@ -778,12 +786,7 @@ to see this pattern in real daily use cases.</p>
         <a href="https://blog.frieserlabs.dev/post/http-service-functional-options/" class="article-link">
             <div class="article-data-outer">
                 <div class="image-container">
-                    
-                        
-                            
-                            <img src="/post/http-service-functional-options/images/hero_hu633dc5b12dffbe3d34c93a002c533628_2981830_670x0_resize_q75_box.jpg" class="article-image"/>
-                        
-                    
+                    <img src="/post/http-service-functional-options/images/network.jpg" class="article-image"/>
                 </div>
                 <div class="article-data">
                     <h2 class="article-title">
@@ -808,12 +811,7 @@ to see this pattern in real daily use cases.</p>
         <a href="https://blog.frieserlabs.dev/post/simple-orm-functional-options/" class="article-link">
             <div class="article-data-outer">
                 <div class="image-container">
-                    
-                        
-                            
-                            <img src="/post/simple-orm-functional-options/images/hero_hu3d03a01dcc18bc5be0e67db3d8d209a6_2329900_670x0_resize_q75_box.jpg" class="article-image"/>
-                        
-                    
+                    <img src="/post/simple-orm-functional-options/images/datacenter.jpg" class="article-image"/>
                 </div>
                 <div class="article-data">
                     <h2 class="article-title">
@@ -892,12 +890,7 @@ unnecessary constructor or to use this Functional Options pattern.</p>
                  id="article-link-bigger">
                     <div>
                         <div class="image-container">
-                            
-                                
-                                    
-                                    <img src="/post/http-service-functional-options/images/hero_hu633dc5b12dffbe3d34c93a002c533628_2981830_670x0_resize_q75_box.jpg" class="article-image"/>
-                                
-                            
+                            <img src="/post/http-service-functional-options/images/network.jpg" class="article-image" />
                         </div>
                         <div>
                             <h2 class="article-title">
@@ -917,12 +910,7 @@ unnecessary constructor or to use this Functional Options pattern.</p>
                 >
                     <div>
                         <div class="image-container">
-                            
-                                
-                                    
-                                    <img src="/post/simple-orm-functional-options/images/hero_hu3d03a01dcc18bc5be0e67db3d8d209a6_2329900_670x0_resize_q75_box.jpg" class="article-image"/>
-                                
-                            
+                            <img src="/post/simple-orm-functional-options/images/datacenter.jpg" class="article-image" />
                         </div>
                         <div>
                             <h2 class="article-title">
@@ -953,7 +941,7 @@ unnecessary constructor or to use this Functional Options pattern.</p>
       <div class="footer-hr"></div>
       <div class="footer-container">
         <div class="footer-text">
-          © 2020 Frieserlabs blog
+          © 2021 Frieserlabs blog
         </div>
         <div class="social-icon-outer">
     <div class="social-icon-container">

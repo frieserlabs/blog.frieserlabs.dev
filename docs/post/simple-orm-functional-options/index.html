@@ -5,15 +5,12 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="/images/favicon.svg">
-    <link rel="preload" href="https://use.typekit.net/huf6cwu.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://use.typekit.net/huf6cwu.css"></noscript>
+    <link rel="stylesheet" href="https://use.typekit.net/huf6cwu.css">
     
-    <link onload="if(media!='all')media='all'"  media="none" rel="stylesheet" href="/scss/global.min.35ddc9d933dec22c7207306289a5fa2b21ac872e5e15b21880f6fa835fec411c.css">
+    <link rel="stylesheet" href="/scss/global.min.8f7c87358af0ef7023ced522c62d9ddca25140d4c5011aa7636cbb16feb0fdc4.css">
     
-    <link rel="preload" href="/css/prism.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="/css/prism.css"></noscript>
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather&display=swap"></noscript>
+    <link rel="stylesheet" href="/css/prism.css" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
     
 
  
@@ -52,7 +49,19 @@
 
 
 
-    </head>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-175585349-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
 
 
 <body class="line-numbers">
@@ -79,9 +88,8 @@
             id="svg8"
             version="1.1"
             viewBox="0 0 93.845541 13.146094"
-            h
-            eight="18.899mm"
-            width="134.914mm">
+            height="16.481mm"
+            width="117.649mm">
         <defs
                 id="defs2">
             <rect
@@ -455,12 +463,7 @@ pattern when designing our APIs:</p>
         <a href="https://blog.frieserlabs.dev/post/functional-option-in-go/" class="article-link">
             <div class="article-data-outer">
                 <div class="image-container">
-                    
-                        
-                            
-                            <img src="/post/functional-option-in-go/images/hero_hu3d03a01dcc18bc5be0e67db3d8d209a6_516613_670x0_resize_q75_box.jpg" class="article-image"/>
-                        
-                    
+                    <img src="/post/functional-option-in-go/images/startup.jpg" class="article-image"/>
                 </div>
                 <div class="article-data">
                     <h2 class="article-title">
@@ -487,7 +490,7 @@ of the cases we can simply use this package directly. But at certain
 point, we are going to need to create our own package to encapsulate
 our database logic:</p>
 <h4 id="user-package">User Package</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">User</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">User</span>
 
 <span style="color:#f92672">import</span> (
 	<span style="color:#e6db74">&#34;database/sql&#34;</span>
@@ -535,7 +538,7 @@ our database logic:</p>
 
 	<span style="color:#66d9ef">return</span> <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">u</span>, <span style="color:#66d9ef">nil</span>
 }
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
 
 <span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;user&#34;</span>
 
@@ -554,7 +557,7 @@ code.</p>
 <h2 id="builder-pattern">Builder pattern</h2>
 <p>One improvement to our API, is to use the builder pattern:</p>
 <h4 id="builder">Builder</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">User</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">User</span>
 
 <span style="color:#f92672">import</span> (
 	<span style="color:#e6db74">&#34;database/sql&#34;</span>
@@ -624,7 +627,7 @@ code.</p>
 	<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">b</span>
 }
 </code></pre></div><p>The consumer&rsquo;s code results more comfortable to read now:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
 
 <span style="color:#f92672">import</span> (
 	<span style="color:#e6db74">&#34;log&#34;</span>
@@ -653,7 +656,7 @@ have to pass in some builder methods a parameter value.</p>
 some methods and options from the user package to a db package to let us to reuse them in another
 domain&rsquo;s data.</p>
 <h4 id="db-package-with-functional-options">DB package with functional options</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">db</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">db</span>
 
 <span style="color:#f92672">import</span> (
 	<span style="color:#e6db74">&#34;fmt&#34;</span>
@@ -736,7 +739,7 @@ domain&rsquo;s data.</p>
 }
 
 </code></pre></div><h4 id="user-package-with-functional-options">User package with functional options</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">user</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">user</span>
 
 <span style="color:#f92672">import</span> (
 	<span style="color:#e6db74">&#34;bbva.com/lra/lra_deployer/internal/db&#34;</span>
@@ -841,7 +844,7 @@ domain&rsquo;s data.</p>
 
 	<span style="color:#66d9ef">return</span> <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">u</span>, <span style="color:#66d9ef">nil</span>
 }
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
 
 <span style="color:#f92672">import</span> (
 
@@ -918,13 +921,13 @@ using functional options in this particular case:</p>
 <ul>
 <li>Makes code easier to read and test it.</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// can we figure out what does this without
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// can we figure out what does this without
 </span><span style="color:#75715e">// reading the implementation?
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">users</span>, <span style="color:#a6e22e">err</span> = <span style="color:#a6e22e">user</span>.<span style="color:#a6e22e">Find</span>(<span style="color:#a6e22e">db</span>.<span style="color:#a6e22e">Where</span>(<span style="color:#a6e22e">user</span>.<span style="color:#a6e22e">EmailIsNotNull</span>()))
 </code></pre></div><ul>
 <li>Avoids breaking API breaks.</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// using variadic functions we can add
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// using variadic functions we can add
 </span><span style="color:#75715e">// new options to the package without
 </span><span style="color:#75715e">// breaking our consumer code 
 </span><span style="color:#75715e">// this acts as the init of the query
@@ -934,7 +937,7 @@ using functional options in this particular case:</p>
 </code></pre></div><ul>
 <li>Safe use of the API, avoids bad uses and values.</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// providing our options to the consumer
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// providing our options to the consumer
 </span><span style="color:#75715e">// we enforce a safe use of the API
 </span><span style="color:#75715e">// option that add email IS NOT NULL
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">EmailIsNotNull</span>() <span style="color:#a6e22e">db</span>.<span style="color:#a6e22e">Option</span> {
@@ -943,7 +946,7 @@ using functional options in this particular case:</p>
 </code></pre></div><ul>
 <li>Can be easily extended with our options implementation.</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// as we see, the consumers can implement
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// as we see, the consumers can implement
 </span><span style="color:#75715e">// theirs custom functional options and 
 </span><span style="color:#75715e">// extend the API
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">workOnAcme</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">func</span> () <span style="color:#a6e22e">db</span>.<span style="color:#a6e22e">Option</span> {
@@ -959,13 +962,13 @@ using functional options in this particular case:</p>
 </code></pre></div><ul>
 <li>Self documenting API.</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// no need to comment what it does, its clear 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// no need to comment what it does, its clear 
 </span><span style="color:#75715e">// thanks to the API naming
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">users</span>, <span style="color:#a6e22e">err</span> = <span style="color:#a6e22e">user</span>.<span style="color:#a6e22e">Find</span>(<span style="color:#a6e22e">db</span>.<span style="color:#a6e22e">Where</span>(<span style="color:#a6e22e">user</span>.<span style="color:#a6e22e">EmailIsNotNull</span>()))
 </code></pre></div><ul>
 <li>Highly configurable.</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// the consumers can configure the API
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// the consumers can configure the API
 </span><span style="color:#75715e">// on their needs with the combination
 </span><span style="color:#75715e">// of functional options
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">usr</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">user</span>.<span style="color:#a6e22e">First</span>(
@@ -989,12 +992,7 @@ using functional options in this particular case:</p>
         <a href="https://blog.frieserlabs.dev/post/http-service-functional-options/" class="article-link">
             <div class="article-data-outer">
                 <div class="image-container">
-                    
-                        
-                            
-                            <img src="/post/http-service-functional-options/images/hero_hu633dc5b12dffbe3d34c93a002c533628_2981830_670x0_resize_q75_box.jpg" class="article-image"/>
-                        
-                    
+                    <img src="/post/http-service-functional-options/images/network.jpg" class="article-image"/>
                 </div>
                 <div class="article-data">
                     <h2 class="article-title">
@@ -1062,12 +1060,7 @@ using functional options in this particular case:</p>
                  id="article-link-bigger">
                     <div>
                         <div class="image-container">
-                            
-                                
-                                    
-                                    <img src="/post/bazel-git-hooks/images/hero_hu91aad8f62393aa3cb191e4a8465d3748_3435494_670x0_resize_q75_box.jpg" class="article-image"/>
-                                
-                            
+                            <img src="/post/bazel-git-hooks/images/hook.jpg" class="article-image" />
                         </div>
                         <div>
                             <h2 class="article-title">
@@ -1087,12 +1080,7 @@ using functional options in this particular case:</p>
                 >
                     <div>
                         <div class="image-container">
-                            
-                                
-                                    
-                                    <img src="/post/ignore-folder-gazelle/images/hero_hu8bd7f300227a837ae4de8886f8e8b6ba_2007881_670x0_resize_q75_box.jpg" class="article-image"/>
-                                
-                            
+                            <img src="/post/ignore-folder-gazelle/images/generator.jpg" class="article-image" />
                         </div>
                         <div>
                             <h2 class="article-title">
@@ -1123,7 +1111,7 @@ using functional options in this particular case:</p>
       <div class="footer-hr"></div>
       <div class="footer-container">
         <div class="footer-text">
-          © 2020 Frieserlabs blog
+          © 2021 Frieserlabs blog
         </div>
         <div class="social-icon-outer">
     <div class="social-icon-container">

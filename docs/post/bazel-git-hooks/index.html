@@ -5,15 +5,12 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="/images/favicon.svg">
-    <link rel="preload" href="https://use.typekit.net/huf6cwu.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://use.typekit.net/huf6cwu.css"></noscript>
+    <link rel="stylesheet" href="https://use.typekit.net/huf6cwu.css">
     
-    <link onload="if(media!='all')media='all'"  media="none" rel="stylesheet" href="/scss/global.min.35ddc9d933dec22c7207306289a5fa2b21ac872e5e15b21880f6fa835fec411c.css">
+    <link rel="stylesheet" href="/scss/global.min.8f7c87358af0ef7023ced522c62d9ddca25140d4c5011aa7636cbb16feb0fdc4.css">
     
-    <link rel="preload" href="/css/prism.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="/css/prism.css"></noscript>
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather&display=swap"></noscript>
+    <link rel="stylesheet" href="/css/prism.css" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
     
 
  
@@ -52,7 +49,19 @@ The first concern that came to our mind, is that a single change in one of our s
 
 
 
-    </head>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-175585349-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
 
 
 <body class="line-numbers">
@@ -79,9 +88,8 @@ The first concern that came to our mind, is that a single change in one of our s
             id="svg8"
             version="1.1"
             viewBox="0 0 93.845541 13.146094"
-            h
-            eight="18.899mm"
-            width="134.914mm">
+            height="16.481mm"
+            width="117.649mm">
         <defs
                 id="defs2">
             <rect
@@ -458,7 +466,7 @@ and keep the information of the services and libs involved. We used previously g
 templates for another projects, but we need to use then now with Bazel and made them
 distributable across the team members.</p>
 <p>Here is how the file structure of all we need to achieve it:</p>
-<pre><code class="language-tree" data-lang="tree">├── .githooks/
+<pre tabindex="0"><code class="language-tree" data-lang="tree">├── .githooks/
 │   ├── pre-commit
 │   └── pre-push
 ├── .gitmsg/
@@ -472,22 +480,22 @@ distributable across the team members.</p>
 </code></pre><p>First, we need to add our git hooks and templates to the git configuration. To automate that task
 we use the file bazel.rc. This file is a configuration file that generally is the root of our monorepo
 and allow us to configure some flags that modify how Bazel runs.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># bazel.rc</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># bazel.rc</span>
 build --workspace_status_command scripts/workspace_status.sh
 </code></pre></div><p>The flag <code>workspace_status_command</code>, allow us to indicate a binary/script that Bazel runs before each build.
 The program can report information about the status of the workspace, such as the current source
 control revision. We take the advantage of this flag to include our hooks and templates to git.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># workspace_status.sh</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># workspace_status.sh</span>
 <span style="color:#75715e">#!/usr/bin/env bash</span>
 
 git config commit.template .gitmsg/gitcommitmsg.txt
 git config core.hooksPath .githooks
 </code></pre></div><p>We also need to make executable this script:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">chmod a+x scripts/workspace_status.sh
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">chmod a+x scripts/workspace_status.sh
 </code></pre></div><h3 id="git-hooks">Git Hooks</h3>
 <p>Now, we are going to implement the scripts that will run before a git commit, and a git push.</p>
 <h4 id="pre-commit">Pre Commit</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># pre-commit</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># pre-commit</span>
 <span style="color:#75715e">#!/usr/bin/env bash</span>
 set -e
 
@@ -514,10 +522,10 @@ hash gofmt 2&gt;&amp;- <span style="color:#f92672">||</span> <span style="color:
 exit $exitcode
 </code></pre></div><p>In our case, we use the pre-commit script to run gofmt, to ensure all the committed code is
 well formatted. Don&rsquo;t forget to make the script executable:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">chmod a+x .githooks/pre-commit
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">chmod a+x .githooks/pre-commit
 </code></pre></div><h4 id="pre-push">Pre Push</h4>
 <p>Now it comes the interesting part:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># pre-push</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># pre-push</span>
 <span style="color:#75715e">#!/usr/bin/env bash</span>
 set -e
 
@@ -536,11 +544,11 @@ and syntax rules, run the tests of all the services and libraries, and build all
 services. With this, we ensure that all of our services are still working fine before
 pushing it to our code repository.</p>
 <p>Also, don&rsquo;t forget to make the script executable:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">chmod a+x .githooks/pre-commit
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">chmod a+x .githooks/pre-commit
 </code></pre></div><h3 id="git-message-templates">Git Message templates</h3>
 <p>This simple git template is the one we use in each commit message. Only we have to do is only
 to leave the services or libraries affected by the change.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#f92672">[</span>COMPONENT A<span style="color:#f92672">][</span>COMPONENT B<span style="color:#f92672">][</span>LIB<span style="color:#f92672">]</span> your message here
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#f92672">[</span>COMPONENT A<span style="color:#f92672">][</span>COMPONENT B<span style="color:#f92672">][</span>LIB<span style="color:#f92672">]</span> your message here
 </code></pre></div>
     </article>
 
@@ -592,12 +600,7 @@ to leave the services or libraries affected by the change.</p>
                  id="article-link-bigger">
                     <div>
                         <div class="image-container">
-                            
-                                
-                                    
-                                    <img src="/post/ignore-folder-gazelle/images/hero_hu8bd7f300227a837ae4de8886f8e8b6ba_2007881_670x0_resize_q75_box.jpg" class="article-image"/>
-                                
-                            
+                            <img src="/post/ignore-folder-gazelle/images/generator.jpg" class="article-image" />
                         </div>
                         <div>
                             <h2 class="article-title">
@@ -617,12 +620,7 @@ to leave the services or libraries affected by the change.</p>
                 >
                     <div>
                         <div class="image-container">
-                            
-                                
-                                    
-                                    <img src="/post/functional-option-in-go/images/hero_hu3d03a01dcc18bc5be0e67db3d8d209a6_516613_670x0_resize_q75_box.jpg" class="article-image"/>
-                                
-                            
+                            <img src="/post/functional-option-in-go/images/startup.jpg" class="article-image" />
                         </div>
                         <div>
                             <h2 class="article-title">
@@ -653,7 +651,7 @@ to leave the services or libraries affected by the change.</p>
       <div class="footer-hr"></div>
       <div class="footer-container">
         <div class="footer-text">
-          © 2020 Frieserlabs blog
+          © 2021 Frieserlabs blog
         </div>
         <div class="social-icon-outer">
     <div class="social-icon-container">
