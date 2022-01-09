@@ -5,7 +5,7 @@ theme = "github.com/frieserlabs/hugo-theme-novela"
 publishDir = "docs"
 
 disqusShortname = "blog-frieserlabs-dev"
-googleAnalytics = "UA-175585349-1"
+googleAnalytics = "G-6CE2P4EWF8"
 
 [params]
 description = "Blog for notes and ideas about software development and devops"
