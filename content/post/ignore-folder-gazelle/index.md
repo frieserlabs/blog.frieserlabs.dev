@@ -1,7 +1,7 @@
 ---
 title: "Ignore a folder with Gazelle"
 date: 2020-12-05
-hero: "/post/ignore-folder-gazelle/images/generator.jpg"
+hero: "generator.jpg"
 authors:
   - frieser
 tags:

@@ -1,7 +1,7 @@
 ---
 title: "Git Hooks in Bazel"
 date: 2020-12-05
-hero: "/post/bazel-git-hooks/images/hook.jpg"
+hero: "hook.jpg"
 excerpt: "Distribute your Git Hooks and Templates across your team with Bazel"
 authors:
   - frieser

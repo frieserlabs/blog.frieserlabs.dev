@@ -1,7 +1,7 @@
 ---
 title: Functional Options for your API in Go
 date: 2020-08-29
-hero: "/post/functional-option-in-go/images/startup.jpg"
+hero: "startup.jpg"
 excerpt: Make your packages API more friendly in Go.
 authors:
   - frieser

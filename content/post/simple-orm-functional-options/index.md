@@ -1,7 +1,7 @@
 ---
 title: "Functional Options Use Case II: Simple ORM"
 date: 2020-08-29
-hero: "/post/simple-orm-functional-options/images/datacenter.jpg"
+hero: "datacenter.jpg"
 excerpt: Prototype a simple ORM using functional options pattern.
 authors:
   - frieser

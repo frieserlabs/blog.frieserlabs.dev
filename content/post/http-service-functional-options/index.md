@@ -1,7 +1,7 @@
 ---
 title: "Functional Options Use Case I: HTTP Service Wrapper"
 date: 2020-08-29
-hero: "/post/http-service-functional-options/images/network.jpg"
+hero: "network.jpg"
 excerpt: Improving an HTTP API Service library wrapper.
 authors:
   - frieser
