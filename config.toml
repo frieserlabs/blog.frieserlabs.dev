@@ -2,7 +2,6 @@ baseURL = "https://blog.frieserlabs.dev/"
 languageCode = "en-us"
 title = "Frieserlabs blog"
 theme = "github.com/frieserlabs/hugo-theme-novela"
-publishDir = "docs"
 
 disqusShortname = "blog-frieserlabs-dev"
 googleAnalytics = "G-6CE2P4EWF8"
