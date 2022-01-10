@@ -6,6 +6,8 @@ theme = "github.com/frieserlabs/hugo-theme-novela"
 disqusShortname = "blog-frieserlabs-dev"
 googleAnalytics = "G-6CE2P4EWF8"
 
+enableRobotsTXT = true
+
 [params]
 description = "Blog for notes and ideas about software development and devops"
 

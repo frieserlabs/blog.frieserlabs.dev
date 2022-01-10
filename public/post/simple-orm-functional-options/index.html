@@ -1,64 +1,12 @@
+<!DOCTYPE html>
 <html>
 
 <head>
+    <meta name="description" content="Blog for notes and ideas about software development and devops">
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="/images/favicon.svg">
-    
-    <link media="none" onload="if(media!=='all')media='all'" rel="stylesheet" href="/scss/global.min.9cdfad8b75d483175249779f251ad1c4.css">
-    
-    <link media="none" onload="if(media!=='all')media='all'" rel="stylesheet" href="/css/prism.min.7406c7a8f57fa984f04c905d6ffe5e84.css" />
-    
-
- 
-
-
-
-
-
-
-	
-
-
-
-
-<title>Functional Options Use Case II: Simple ORM | Frieserlabs blog</title>
-<meta name="description" content="In previous posts, we discussed in depth the functional options pattern and listed the benefits of using this pattern over others such as the builder pattern when designing our APIs:
- Functional Options for your API in Go  Make your packages API more friendly in Go. August 29, 2020      In this one, we are going to apply this pattern to another common use case in our projects, accessing a database.">
-<meta property="og:title" content="Functional Options Use Case II: Simple ORM | Frieserlabs blog">
-<meta property="og:site_name" content="Frieserlabs blog">
-<meta property="og:description" content="In previous posts, we discussed in depth the functional options pattern and listed the benefits of using this pattern over others such as the builder pattern when designing our APIs:
- Functional Options for your API in Go  Make your packages API more friendly in Go. August 29, 2020      In this one, we are going to apply this pattern to another common use case in our projects, accessing a database.">
-<meta property="og:url" content="https://blog.frieserlabs.dev/post/simple-orm-functional-options/">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="en_US">
-<meta property="og:image" content='https://blog.frieserlabs.dev/datacenter.jpg'><meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Functional Options Use Case II: Simple ORM | Frieserlabs blog">
-
-	<link rel="canonical" href="https://blog.frieserlabs.dev/post/simple-orm-functional-options/">
-
-
-	<meta name="twitter:description" content="In previous posts, we discussed in depth the functional options pattern and listed the benefits of using this pattern over others such as the builder pattern when designing our APIs:
- Functional Options for your API in Go  Make your packages API more friendly in Go. August 29, 2020      In this one, we are going to apply this pattern to another common use case in our projects, accessing a database.">
-<meta name="twitter:image" content="https://blog.frieserlabs.dev/datacenter.jpg">
-<meta property="article:published_time" content="2020-08-29T00:00:00&#43;00:00">
-	<meta property="article:updated_time" content="2020-08-29T00:00:00&#43;00:00">
-
-
-
-    
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6CE2P4EWF8"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-6CE2P4EWF8', { 'anonymize_ip': false });
-}
-</script>
-
 </head>
 
 
@@ -1164,6 +1112,61 @@ xmlns="http://www.w3.org/2000/svg"
 </div>
 
     </div>
+
+    
+    <link media="none" onload="if(media!=='all')media='all'" rel="stylesheet" href="/scss/global.min.9cdfad8b75d483175249779f251ad1c4.css">
+    
+    <link media="none" onload="if(media!=='all')media='all'" rel="stylesheet" href="/css/prism.min.7406c7a8f57fa984f04c905d6ffe5e84.css" />
+    
+
+ 
+
+
+
+
+
+
+	
+
+
+
+
+<title>Functional Options Use Case II: Simple ORM | Frieserlabs blog</title>
+<meta name="description" content="In previous posts, we discussed in depth the functional options pattern and listed the benefits of using this pattern over others such as the builder pattern when designing our APIs:
+ Functional Options for your API in Go  Make your packages API more friendly in Go. August 29, 2020      In this one, we are going to apply this pattern to another common use case in our projects, accessing a database.">
+<meta property="og:title" content="Functional Options Use Case II: Simple ORM | Frieserlabs blog">
+<meta property="og:site_name" content="Frieserlabs blog">
+<meta property="og:description" content="In previous posts, we discussed in depth the functional options pattern and listed the benefits of using this pattern over others such as the builder pattern when designing our APIs:
+ Functional Options for your API in Go  Make your packages API more friendly in Go. August 29, 2020      In this one, we are going to apply this pattern to another common use case in our projects, accessing a database.">
+<meta property="og:url" content="https://blog.frieserlabs.dev/post/simple-orm-functional-options/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content='https://blog.frieserlabs.dev/datacenter.jpg'><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Functional Options Use Case II: Simple ORM | Frieserlabs blog">
+
+	<link rel="canonical" href="https://blog.frieserlabs.dev/post/simple-orm-functional-options/">
+
+
+	<meta name="twitter:description" content="In previous posts, we discussed in depth the functional options pattern and listed the benefits of using this pattern over others such as the builder pattern when designing our APIs:
+ Functional Options for your API in Go  Make your packages API more friendly in Go. August 29, 2020      In this one, we are going to apply this pattern to another common use case in our projects, accessing a database.">
+<meta name="twitter:image" content="https://blog.frieserlabs.dev/datacenter.jpg">
+<meta property="article:published_time" content="2020-08-29T00:00:00&#43;00:00">
+	<meta property="article:updated_time" content="2020-08-29T00:00:00&#43;00:00">
+
+
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6CE2P4EWF8"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-6CE2P4EWF8', { 'anonymize_ip': false });
+}
+</script>
+
 
     
     <script src="/js/prism.js"></script>
