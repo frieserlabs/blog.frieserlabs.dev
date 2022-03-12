@@ -22,3 +22,12 @@ Add this to your root BUILD.bazel file:
 # BUILD.bazel
 # gazelle:exclude folder_path
 ```
+
+{{< mermaid >}}
+%%{init: {'theme':'neutral'}}%%
+%%{init: {'theme': 'neutral' } }%%
+graph LR
+A[Foo] --> B[Bar]
+B --> C[Baz]
+
+{{< /mermaid >}}
